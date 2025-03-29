@@ -1,38 +1,37 @@
-# SublimeLinter-contrib-remark-lint
+## 1. SublimeLinter-contrib-remark-lint
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-remark-lint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-remark-lint)
+This linter plugin for [**SublimeLinter**](https://github.com/SublimeLinter/SublimeLinter)
+provides an interface to [**remark-lint**](https://github.com/remarkjs/remark-lint).
+It will be used with files that have the “Markdown" syntax.
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter)
-provides an interface to [remark-lint](https://github.com/remarkjs/remark-lint).
-It will be used with files that have the “markdown" syntax.
-
-## Installation
+## 2. Installation
 
 SublimeLinter must be installed in order to use this plugin.
 
-Please use [Package Control](https://packagecontrol.io) to install the linter
+Please use [**Package Control**](https://packagecontrol.io) to install the linter
 plugin.
 
-Before installing this plugin, you must ensure that `remark-lint` is installed
+Before installing this plugin, you must ensure that remark-cli is installed
 on your system. This can be done using the command:
 
-```bash
-(sudo) npm install -g remark
+```shell
+npm install --global remark-cli
 ```
 
-Then install [presets](https://www.npmjs.com/search?q=remark-preset)
-and/or [plugins](https://github.com/remarkjs/remark/blob/master/doc/plugins.md), that yo want. Example:
+Your [**presets**](https://www.npmjs.com/search?q=remark-preset) and/or [**rules**](https://github.com/remarkjs/remark-lint#rules) must be installed locally. Example command:
 
-```bash
-(sudo) npm install -g remark-preset-lint-markdown-style-guide
+```shell
+npm install --save-dev remark-preset-lint-markdown-style-guide preset-lint-recommended
 ```
 
-See <https://github.com/remarkjs/remark-lint> for more details.
+See **<https://github.com/remarkjs/remark-lint>** for more details.
 
-In order for `remark-lint` to be executed by SublimeLinter, you must ensure
-that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable).
+You must have the [**Remark configuration file**](https://github.com/remarkjs/remark/tree/main/packages/remark-cli#example-config-files-json-yaml-js).
 
-## Settings
+In order for remark-cli to be executed by SublimeLinter, you must ensure
+that its path is available to SublimeLinter. The docs cover [**troubleshooting PATH configuration**](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable).
 
-- SublimeLinter settings: <http://sublimelinter.readthedocs.org/en/latest/settings.html>
-- Linter settings: <http://sublimelinter.readthedocs.org/en/latest/linter_settings.html>
+## 3. Settings
+
+1. SublimeLinter settings: **<http://sublimelinter.readthedocs.org/en/latest/settings.html>**
+1. Linter settings: **<http://sublimelinter.readthedocs.org/en/latest/linter_settings.html>**
